@@ -3,39 +3,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>My Form</title>
+	<title>Create Your Account</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css'>
-	<link rel='stylesheet' href='style.css'>
+	<link rel='stylesheet' type="text/css" href='style.css'>
 </head>
 <body>
 	<main>
-		<div class='row'>
-			<div class='error messages'>
-				<!-- errors go here -->
-			</div>
+		<h1>Create Your Account</h1>
 			<form class="form" role="form">
+
 				<div class="form-group">
-					<label class="sr-only" for="exampleInputUsername2">Username address</label>
-					<input type="username" class="form-control" id="exampleInputUsername2" placeholder="Enter username">
+					<input type="username" name="name" class="form-control" placeholder="Enter username">
 				</div>
+
 				<div class="form-group">
-					<label class="sr-only" for="exampleInputEmail">Password</label>
-					<input class="form-control" type="email" id='exampleInputEmail' placeholder="Enter email">
+					<input type="email" name="email" class="form-control" placeholder="Enter email">
 				</div>
+
 				<div class="form-group">
-					<label class="sr-only" for="exampleInputPassword2">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+					<input type="password" name="password" class="form-control" placeholder="Password">
 				</div>
+
 				<div class="checkbox">
 					<label>
-						<input type="checkbox"> Remember me
+						<input type="checkbox">Remember me
 					</label>
 				</div>
-				<button type="submit" class="btn btn-default">Sign in</button>
+
+				<button type="submit" class="btn btn-default">Next step</button>
+
 			</form>
-		</div>
 	</main>
-	<script src='main.js'></script>
+	<script src='jquery.js'></script>
 	<script src='jquery.validate.js'></script>
+	<script src='additional-methods.js'></script>
+	<script src='main.js'></script>
 </body>
 </html>
